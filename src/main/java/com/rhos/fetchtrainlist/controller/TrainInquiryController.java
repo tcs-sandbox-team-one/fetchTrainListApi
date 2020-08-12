@@ -17,18 +17,18 @@ public class TrainInquiryController {
 	@GetMapping("/getAllTrains")
 	public List<TrainInfo> getTrainList() {
 		List<TrainInfo> trainList = new ArrayList<TrainInfo>();
-		trainList.add(new TrainInfo("Kolkata - Hyderabad Intercity Express", "Kolkata", "Hyderabad"));
-		trainList.add(new TrainInfo("Kolkata - Hyderabad Maitri Express", "Kolkata", "Hyderabad"));
-		trainList.add(new TrainInfo("Kolkata - Hyderabad SuperMail Express", "Kolkata", "Hyderabad"));
-		trainList.add(new TrainInfo("Kolkata - Hyderabad Inetrgallop Express", "Kolkata", "Hyderabad"));
-		trainList.add(new TrainInfo("Kolkata - Mumbai Intercity Express", "Kolkata", "Mumbai"));
-		trainList.add(new TrainInfo("Kolkata - Mumbai Maitri Express", "Kolkata", "Mumbai"));
-		trainList.add(new TrainInfo("Kolkata - Mumbai SuperMail Express", "Kolkata", "Mumbai"));
-		trainList.add(new TrainInfo("Kolkata - Mumbai Inetrgallop Express", "Kolkata", "Mumbai"));
-		trainList.add(new TrainInfo("Kolkata - Chennai Intercity Express", "Kolkata", "Chennai"));
-		trainList.add(new TrainInfo("Kolkata - Chennai Maitri Express", "Kolkata", "Chennai"));
-		trainList.add(new TrainInfo("Kolkata - Chennai SuperMail Express", "Kolkata", "Chennai"));
-		trainList.add(new TrainInfo("Kolkata - Chennai Inetrgallop Express", "Kolkata", "Chennai"));
+		trainList.add(new TrainInfo("Kolkata", "Hyderabad","Intercity"));
+		trainList.add(new TrainInfo("Kolkata", "Hyderabad","Maitri"));
+		trainList.add(new TrainInfo("Kolkata", "Hyderabad","SuperMail"));
+		trainList.add(new TrainInfo("Kolkata", "Hyderabad","Inetrgallop"));
+		trainList.add(new TrainInfo("Kolkata", "Mumbai","Intercity"));
+		trainList.add(new TrainInfo("Kolkata", "Mumbai","Maitri"));
+		trainList.add(new TrainInfo("Kolkata", "Mumbai","SuperMail"));
+		trainList.add(new TrainInfo("Kolkata", "Mumbai","Inetrgallop"));
+		trainList.add(new TrainInfo("Kolkata", "Chennai","Intercity"));
+		trainList.add(new TrainInfo("Kolkata", "Chennai","Maitri"));
+		trainList.add(new TrainInfo("Kolkata", "Chennai","SuperMail"));
+		trainList.add(new TrainInfo("Kolkata", "Chennai","Inetrgallop"));
 		return trainList;
 	}
 

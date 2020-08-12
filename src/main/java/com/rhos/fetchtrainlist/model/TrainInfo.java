@@ -2,21 +2,10 @@ package com.rhos.fetchtrainlist.model;
 
 public class TrainInfo {
 
-	   private String trainName;
+	  
 	   private String source;
 	   private String destination;
-	/**
-	 * @return the trainName
-	 */
-	public String getTrainName() {
-		return trainName;
-	}
-	/**
-	 * @param trainName the trainName to set
-	 */
-	public void setTrainName(String trainName) {
-		this.trainName = trainName;
-	}
+	   private String type;
 	/**
 	 * @return the source
 	 */
@@ -41,19 +30,33 @@ public class TrainInfo {
 	public void setDestination(String destination) {
 		this.destination = destination;
 	}
-	public TrainInfo(String trainName, String source, String destination) {
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	@Override
+	public String toString() {
+		return "TrainInfo [source=" + source + ", destination=" + destination + ", type=" + type + "]";
+	}
+	public TrainInfo(String source, String destination, String type) {
 		super();
-		this.trainName = trainName;
 		this.source = source;
 		this.destination = destination;
+		this.type = type;
 	}
 	public TrainInfo() {
 		super();
 	}
-	@Override
-	public String toString() {
-		return "TrainInfo [trainName=" + trainName + ", source=" + source + ", destination=" + destination + "]";
-	}
+	
 	   
 	   
 }
